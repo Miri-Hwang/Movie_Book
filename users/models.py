@@ -47,8 +47,8 @@ class User(AbstractUser):
         choices=PREFERENCES_CHOICES, max_length=6, blank=True
     )
     favorite_book_genre = models.CharField(
-        choices=BGENRE_CHOICES, max_length=6, blank=True
+        choices=BGENRE_CHOICES, max_length=20, blank=True
     )
     favorite_movie_genre = models.CharField(
-        choices=MGENRE_CHOICES, max_length=7, blank=True
+        choices=MGENRE_CHOICES, max_length=20, blank=True
     )
