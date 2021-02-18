@@ -21,3 +21,6 @@ class Person(core_models.TimeStampedModel):
     name = models.CharField(max_length=30)
     kind = models.CharField(choices=KIND_CHOICES, max_length=8)
     photo = models.ImageField()
+
+    class Meta:
+        verbose_name_plural = "people"
