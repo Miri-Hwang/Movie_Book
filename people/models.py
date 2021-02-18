@@ -22,5 +22,8 @@ class Person(core_models.TimeStampedModel):
     kind = models.CharField(choices=KIND_CHOICES, max_length=8)
     photo = models.ImageField(blank=True)
 
+    def __str__(self):
+        return f"{self.name}"
+
     class Meta:
         verbose_name_plural = "people"
