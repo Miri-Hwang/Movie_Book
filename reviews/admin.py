@@ -7,4 +7,4 @@ class ReviewsAdmin(admin.ModelAdmin):
 
     """ Reviews Admin Definition """
 
-    pass
+    list_display = ["created_by", "movie", "book", "rating"]

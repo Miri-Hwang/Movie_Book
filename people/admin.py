@@ -9,4 +9,4 @@ class PeopleAdmin(admin.ModelAdmin):
 
     """ People Admin Definition """
 
-    pass
+    list_display = ["name", "kind"]

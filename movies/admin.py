@@ -7,4 +7,4 @@ class MoviesAdmin(admin.ModelAdmin):
 
     """ Movies Admin Definition """
 
-    pass
+    list_display = ["title", "year", "rating", "director"]

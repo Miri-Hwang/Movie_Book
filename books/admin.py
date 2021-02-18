@@ -8,3 +8,5 @@ from . import models
 class BooksAdmin(admin.ModelAdmin):
 
     """ Books Admin Definition """
+
+    list_display = ("title", "year", "category", "rating", "writer")

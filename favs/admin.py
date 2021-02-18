@@ -9,4 +9,4 @@ class FavsAdmin(admin.ModelAdmin):
 
     """ Favs Admin Definition """
 
-    pass
+    list_display = ["created_by"]

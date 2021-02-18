@@ -9,4 +9,4 @@ class CategoriesAdmin(admin.ModelAdmin):
 
     """ Categories Admin Definition """
 
-    pass
+    list_display = ("kind", "name")
