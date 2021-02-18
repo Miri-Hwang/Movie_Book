@@ -20,3 +20,6 @@ class Categories(core_models.TimeStampedModel):
 
     class Meta:
         verbose_name_plural = "Categories"
+
+    def __str__(self):
+        return f"{self.kind} - {self.name}"

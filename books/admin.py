@@ -8,5 +8,3 @@ from . import models
 class BooksAdmin(admin.ModelAdmin):
 
     """ Books Admin Definition """
-
-    pass
