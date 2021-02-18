@@ -13,6 +13,9 @@ class Book(core_models.TimeStampedModel):
     category = models.ForeignKey(
         "categories.Categories", on_delete=models.CASCADE, null=True
     )
-    cover_image = models.ImageField()
+    cover_image = models.ImageField(blank=True)
     rating = models.IntegerField(choices=Rating_CHOICES)
     writer = models.ForeignKey("people.Person", on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return f"{self.title} - {self.writer}"
